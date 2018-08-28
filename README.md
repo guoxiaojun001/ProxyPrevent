@@ -9,7 +9,7 @@
 
 获取当前系统是否设置代理，可以根据不同的 Api Level，分别通过 System.getProperty() 和 android.net.proxy.getXxx() 方法获取到。
 
-  private fun checkWifiProxy(): Boolean {
+       private fun checkWifiProxy(): Boolean {
         val IS_ICS_OR_LATER = Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH
         val proxyAddress: String?
         val proxyPort: Int?
